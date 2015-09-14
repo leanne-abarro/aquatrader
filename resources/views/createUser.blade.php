@@ -20,10 +20,20 @@
 				{!! Form::label('lastname', 'Last Name') !!}
 				{!! Form::text('lastname') !!}
 				{!! $errors -> first('lastname','<p>:message</p>')!!}
+
+				{!! Form::label('password', 'Password') !!}
+				{!! Form::password('password') !!}
+				{!! $errors -> first('password','<p>:message</p>')!!}
+
+				{!! Form::label('password_confirmation', 'Confirm Password') !!}
+				{!! Form::password('password_confirmation') !!}
+				{!! $errors -> first('password_confirmation','<p>:message</p>')!!}
+				
 				
 				{!! Form::submit('Send')!!}
 				{{-- <input type="submit" value="Send"> --}}
 			</fieldset>
 		{!! Form::close() !!}
 
-@endsection			
+@endsection		
+

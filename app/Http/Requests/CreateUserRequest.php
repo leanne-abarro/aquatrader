@@ -26,10 +26,11 @@ class CreateUserRequest extends Request
         return [
             //
 
-            "username" => "required",
-            "email" => "required",
+            "username" => "required|unique:users",
+            "email" => "required|unique:users",
             "firstname" => "required",
-            "lastname" => "required"
+            "lastname" => "required",
+            "password" => "required|confirmed"
         ];
     }
 }

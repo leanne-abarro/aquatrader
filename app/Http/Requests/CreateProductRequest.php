@@ -26,7 +26,8 @@ class CreateProductRequest extends Request
         return [
             "name" => "required",
             "description" => "required",
-            "price" => "required"
+            "price" => "required",
+            "photo" => "required"
         ];
     }
 }
