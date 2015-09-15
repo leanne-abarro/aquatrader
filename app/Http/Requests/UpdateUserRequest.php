@@ -25,8 +25,8 @@ class UpdateUserRequest extends Request
     {
         return [
             //
-            "username" => "required|unique:users,username,".$this->route('id'),
-            "email" => "required|unique:users,email,".$this->route('id'),
+            "username" => "required|unique:users,username,".$this->route('users'),
+            "email" => "required|unique:users,email,".$this->route('users'),
             "firstname" => "required",
             "lastname" => "required"
         ];
