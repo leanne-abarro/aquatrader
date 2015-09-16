@@ -8,7 +8,12 @@ use App\Http\Requests;
 use App\Http\Controllers\Controller;
 
 class ProductsController extends Controller
-{
+{   
+    public function __construct (){
+
+         $this -> middleware('auth',['only' => ['create','store','edit','update']]);
+         $this -> middleware('admin',['only' => ['create','store','edit','update']]);
+    }
     /**
      * Display a listing of the resource.
      *

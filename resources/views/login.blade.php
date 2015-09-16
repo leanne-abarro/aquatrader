@@ -18,6 +18,7 @@
 				{{-- <input type="submit" value="Send"> --}}
 			</fieldset>
 		{!! Form::close() !!}
+		{{Session::get('message')}}
 
 @endsection		
 
