@@ -98,4 +98,9 @@ Route::post('login','LoginController@processLogin');
 
 Route::get('logout','LoginController@logout');
 
+// ===== cart routes =====
+
+Route::get('cart','CartController@showCart');
+
+
 
