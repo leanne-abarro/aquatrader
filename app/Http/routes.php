@@ -74,6 +74,7 @@ Route::get('types/{id}', function ($id){
 // Route::put('products/{id}', 'ProductsController@update');
 
 Route::resource('products','ProductsController');
+Route::resource('product','ProductsController');
 
 
 // ===== user routes =====

@@ -6,7 +6,8 @@ use Illuminate\Http\Request;
 
 use App\Http\Requests;
 use App\Http\Controllers\Controller;
-
+use App\Http\Requests\CreateProductRequest;
+    
 class ProductsController extends Controller
 {   
     public function __construct (){
@@ -41,7 +42,7 @@ class ProductsController extends Controller
      * @param  Request  $request
      * @return Response
      */
-    public function store(\App\Http\Requests\CreateProductRequest $request)
+    public function store(CreateProductRequest $request)
     {
         //
 
@@ -68,6 +69,9 @@ class ProductsController extends Controller
     public function show($id)
     {
         //
+        $product = \App\Models\Product::find($id);
+
+        return view('product',['product' => $product]);
     }
 
     /**

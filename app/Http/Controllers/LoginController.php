@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use Illuminate\Contracts\Auth\Guard;
 
 use App\Http\Requests;
 use App\Http\Controllers\Controller;
@@ -16,7 +17,7 @@ class LoginController extends Controller
     	//return "Hi Leanne";
     }
 
-    public function processLogin (Request $request,\Illuminate\Contracts\Auth\Guard $auth){
+    public function processLogin (Request $request,Guard $auth){
 
     	$credential = $request -> only("username","password");
 

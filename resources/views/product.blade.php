@@ -1,14 +1,12 @@
 @extends('templates.main')
 
 @section('content')
-	<h2>{{$type -> name}}</h2>
-		@foreach($type -> products as $product)
+	<h2>{{$product -> name}}</h2>
 			<article class="group">
 				<img src="{{asset('productphotos/'.$product -> photo)}}" alt="">
-                <h4><a href="{{url('products/'.$product -> id)}}">{{$product -> name}}</a></h4>
+				<h4>{{$product -> name}}</h4>
 				<p>{{$product -> description}}</p>
 				<span class="price"><i class="icon-dollar"></i> {{$product -> price}}</span>
 				<span class="addtocart"><i class="icon-plus"></i></span>
-			</article>
-		@endforeach			
+			</article>		
 @endsection			
