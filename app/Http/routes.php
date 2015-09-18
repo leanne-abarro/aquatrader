@@ -102,6 +102,8 @@ Route::get('logout','LoginController@logout');
 // ===== cart routes =====
 
 Route::get('cart','CartController@showCart');
+Route::post('cartitems','CartController@addItem');
+Route::post('orders','CartController@checkout');
 
 
 
