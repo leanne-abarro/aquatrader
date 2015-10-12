@@ -147,6 +147,25 @@ img{
 
 }
 
+.pagination {
+
+	display: flex;
+	width: 80%;
+	justify-content: space-between;
+}
+
+.pagination,
+.pagination a {
+	font-weight: bold;
+}
+
+.pagination a:hover {
+
+	background: none;
+	border: 0;
+	color: orange;
+}
+
 
 
 
