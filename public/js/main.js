@@ -1,6 +1,6 @@
 $(function(){
-	
-	$("nav a").on("click", function (e){
+
+	var contentLoad = function (e){
 
 		e.preventDefault();
 
@@ -13,5 +13,8 @@ $(function(){
 			$(".main.group").empty().append(data);
 
 		});
-	})
+	};
+
+	$("nav a").on("click", contentLoad);
+	$(".main.group").on("click",".pagination a", contentLoad);
 });
