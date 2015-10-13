@@ -88,11 +88,15 @@
 		</div>
 		<footer></footer>
 
+		<div id="token">{{ csrf_token() }}</div>
+
 	</div><!-- container -->
 	
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
 	<script src="{{asset('js/spin.js')}}"></script>
+	<script src="{{asset('js/history/html5/jquery.history.js')}}"></script>
+	<script src="{{asset('js/jquery.editable.js')}}"></script>
 	<script src="{{asset('js/main.js')}}"></script>
 
 <!-- End Document
