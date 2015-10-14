@@ -40,6 +40,7 @@ $(function(){
 
 		var options ={
 			type:"textarea",
+			cssclass: "editable",
 			submitdata: {
 				_method: "PUT",
 				_token: $("#token").text(),
@@ -51,5 +52,16 @@ $(function(){
 	$(this).editable(url,options);
 
 	});
+
+	// wysiwyg
+
+		$(document).on("DOMNodeInserted", function (e){
+
+			if($(e.target).hasClass("editable")) {
+				tinymce.editors =[];
+				tinymce.init({selector:'.editable textarea'});
+			}
+
+	});	
 	
 });

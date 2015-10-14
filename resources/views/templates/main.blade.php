@@ -18,6 +18,7 @@
   ================================================== -->
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
+
 	<!-- CSS
   ================================================== -->
   	<link href="http://netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.min.css" rel="stylesheet">
@@ -35,6 +36,8 @@
 	<link rel="apple-touch-icon" href="images/apple-touch-icon.png">
 	<link rel="apple-touch-icon" sizes="72x72" href="images/apple-touch-icon-72x72.png">
 	<link rel="apple-touch-icon" sizes="114x114" href="images/apple-touch-icon-114x114.png">
+
+
 
 </head>
 <body>
@@ -96,6 +99,7 @@
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
 	<script src="{{asset('js/spin.js')}}"></script>
 	<script src="{{asset('js/history/html5/jquery.history.js')}}"></script>
+	<script src="//tinymce.cachefly.net/4.2/tinymce.min.js"></script>
 	<script src="{{asset('js/jquery.editable.js')}}"></script>
 	<script src="{{asset('js/main.js')}}"></script>
 
